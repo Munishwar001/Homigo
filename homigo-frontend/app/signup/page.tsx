@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { Mic, ShieldCheck, Zap, Star } from 'lucide-react';
-import { SignInForm } from '../../modules/auth/signin-form';
+import { AuthCard } from '../../modules/auth/auth-card';
 
-export default function SignInPage() {
+export default function SignUpPage() {
   return (
     <main className="flex min-h-screen">
       {/* ── LEFT: Brand panel (desktop only) ── */}
@@ -18,6 +18,7 @@ export default function SignInPage() {
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-br from-indigo-500 to-violet-600 text-sm font-bold text-white shadow-lg shadow-indigo-500/30">
             H
           </div>
+
           <span className="text-lg font-bold text-white">Homigo</span>
         </Link>
 
@@ -29,16 +30,16 @@ export default function SignInPage() {
           </div>
 
           <h2 className="mt-6 text-4xl font-black leading-tight tracking-tight text-white">
-            Welcome back
+            Your home,
             <br />
             <span className="bg-linear-to-r from-indigo-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              to Homigo.
+              one call away.
             </span>
           </h2>
 
           <p className="mt-4 max-w-sm text-base leading-7 text-slate-400">
-            Your home services are just one tap away. Sign in and let our AI
-            find the best pros for you.
+            Join 10,000+ homeowners who book trusted professionals in seconds —
+            just by speaking.
           </p>
 
           {/* Mic visual */}
@@ -104,15 +105,15 @@ export default function SignInPage() {
         <div className="w-full max-w-md">
           <div className="mb-8">
             <h1 className="text-3xl font-black tracking-tight text-slate-900">
-              Welcome back
+              Create your account
             </h1>
             <p className="mt-2 text-sm text-slate-500">
-              Sign in to your Homigo account.
+              Get started with Homigo in under a minute.
             </p>
           </div>
 
           <div className="rounded-3xl border border-indigo-100 bg-white p-8 shadow-[0_8px_40px_rgba(99,102,241,0.1)]">
-            <SignInForm />
+            <AuthCard />
           </div>
         </div>
       </div>
