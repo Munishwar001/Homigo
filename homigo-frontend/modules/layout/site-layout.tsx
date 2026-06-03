@@ -5,9 +5,7 @@ export function SiteLayout({
 }>) {
   return (
     <div className="min-h-screen bg-[#f4f7fb]">
-      <div className="flex min-h-screen w-full flex-col">
-        {children}
-      </div>
+      <div className="flex min-h-screen w-full flex-col">{children}</div>
     </div>
   );
 }
